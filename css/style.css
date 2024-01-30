@@ -43,3 +43,7 @@ header {
     display: block;
 }
 
+.cell.show-bomb {
+    background-color: crimson;
+}
+

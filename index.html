@@ -1,50 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>CampoMinato</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-6 d-flex align-items-center">
-                        <h1 class="text-white">
-                            CAMPO MINATO
-                        </h1>
-                    </div>
-                    <div class="col-4 d-flex align-items-center">
-                        <div>Score: <span id="score"></span></div>
-                    </div>
-                        <div class="controls d-flex  col-2 align-items-center rounded rounded-pill">
-                            <select  id="select-level">
-                                <option value="easy">Facile</option>
-                                <option value="normal">Normale</option>
-                                <option value="hard">Difficile</option>
-                            </select>
-                            <div class=" d-flex align-items-center ms-5">
-                                <button type="submit" id="button" class="btn btn-dark rounded rounded-pill ">Gioca</button>
-                            </div>
-                        </div>
-                    
-                
-                    
-                </div>
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 d-flex align-items-center">
+              <h1 class="text-white">CAMPO MINATO</h1>
             </div>
+            <div class="col-4 d-flex align-items-center">
+              <div>Score: <span id="score"></span></div>
+            </div>
+            <div
+              class="controls d-flex col-2 align-items-center rounded rounded-pill"
+            >
+              <select id="select-level">
+                <option value="easy">Facile</option>
+                <option value="normal">Normale</option>
+                <option value="hard">Difficile</option>
+              </select>
+              <div class="d-flex align-items-center ms-5">
+                <button
+                  type="submit"
+                  id="button"
+                  class="btn btn-dark rounded rounded-pill"
+                >
+                  Gioca
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <div class="container-fluid bg-dark">
-            <div id="grid">
-                <!-- <div class="cell">1</div> -->
-            </div>
+      <div class="container-fluid bg-dark">
+        <div id="grid">
+          <!-- <div class="cell">1</div> -->
         </div>
-       
+      </div>
     </main>
-   <script src="script.js"></script> 
-</body>
+    <div
+      id="messageModal"
+      class="modal fade"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p id="message"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
 </html>
